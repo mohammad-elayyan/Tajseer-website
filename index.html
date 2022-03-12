@@ -18,10 +18,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	
 	<!-- Css -->
+	<link rel="stylesheet" href="css/fonts/icomoon/icomoon.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/core.min.css" />
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/skin.css" />
+	<link rel="stylesheet" href="css/slider/main.css">
+	<link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
 
 	<!--[if lt IE 9]>
     	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -35,9 +39,9 @@
 		<div class="side-navigation-scroll-pane">
 			<div class="side-navigation-inner">
 				<div class="side-navigation-header">
-					<div class="navigation-hide side-nav-hide">
+					<div class="navigation-hide side-nav-hide" style="left: 1% !important;">
 						<a href="#">
-							<span class="icon-cancel medium"></span>
+							<i class="fa-solid fa-xmark fa-2x"></i>
 						</a>
 					</div>
 				</div>
@@ -96,7 +100,7 @@
 					</ul>
 				</nav>
 				<div class="side-navigation-footer center">
-					<p class="copyright no-margin-bottom">&copy; 2022 تجسير، جميع الحقوق محفوظة.</p>
+					<p class="copyright no-margin-bottom"><i class="fa-solid fa-copyright"></i> 2022 تجسير، جميع الحقوق محفوظة.</p>
 				</div>
 			</div>
 		</div>
@@ -122,7 +126,7 @@
 									<li class="aux-navigation hide">
 										<!-- Aux Navigation -->
 										<a href="#" class="navigation-show side-nav-show nav-icon">
-											<span class="icon-menu"></span>
+											<i class="fa-solid fa-bars"></i>
 										</a>
 									</li>
 								</ul>
@@ -279,69 +283,102 @@
 
 				<!-- Demo Grid -->
 				
-					<div id="homepage-demos" class="section-block no-padding-bottom bkg-grey-ultralight right">
+					<div id="homepage-demos" class="section-block no-padding-bottom bkg-grey-ultralight center">
 						<div class="row">
 							<div class="column width-12 center">
 								<h2 class="mb-60 title-color">الحلول التعليمية</h2>
 							</div>
 						</div>
 					</div>
-					<div id="homepage-grid" class="grid-container fade-in-progressively no-padding-top no-padding-bottom bkg-grey-ultralight right" data-layout-mode="fitRows" data-animate-filter-duration="700" data-animate-resize data-animate-resize-duration="0">
+					<div dir="ltr" id="homepage-grid" class="fade-in-progressively no-padding-top no-padding-bottom bkg-grey-ultralight right" data-layout-mode="fitRows" data-animate-filter-duration="700" data-animate-resize data-animate-resize-duration="0">
 						<div class="row">
 							<div class="column width-12">
-								<div class="row grid content-grid-3">
-									<div class="grid-item mobile-app home-page-layout">
-										<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="transparent" data-hover-bkg-opacity="1">
-											<a class="overlay-link" href="404.html">
-												<img src="images/index/Robotics.jpg" alt=""/>
-												<span class="overlay-info">
-													<span>
-														<span>
-															<span class="icon-plus"></span>
-														</span>
-													</span>
-												</span>
-											</a>
-										</div>
-										<div class="item-description with-background">
-											<h4 class="title-color">الروبوتات</h4>
+								<div class="row grid">
+									<div class="container">
+										<div class="team-container right">
+
+											<div class="owl-carousel group-slide">
+												
+												<div class="slide-item">
+													<div class="grid-item mobile-app home-page-layout">
+														<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="transparent" data-hover-bkg-opacity="1">
+															<a class="overlay-link" href="404.html">
+																<img src="images/index/Robotics.jpg" alt=""/>
+																<span class="overlay-info">
+																	<span>
+																		<span>
+																			<span class="icon-plus"></span>
+																		</span>
+																	</span>
+																</span>
+															</a>
+														</div>
+														<div class="item-description with-background">
+															<h4 class="title-color">الروبوتات</h4>
+														</div>
+													</div>
+												</div>
+												<div class="slide-item">
+													<div class="grid-item mobile-app home-page-layout">
+														<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="transparent" data-hover-bkg-opacity="1">
+															<a class="overlay-link" href="404.html">
+																<img src="images/index/STEM.jpg" alt=""/>
+																<span class="overlay-info">
+																	<span>
+																		<span>
+																			<span class="icon-plus"></span>
+																		</span>
+																	</span>
+																</span>
+															</a>
+														</div>
+														<div class="item-description with-background">
+															<h4 class="title-color">ستيم</h4>
+														</div>
+													</div>
+											</div>
+											<div class="slide-item">
+												<div class="grid-item mobile-app home-page-layout">
+													<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="transparent" data-hover-bkg-opacity="1">
+														<a class="overlay-link" href="404.html">
+															<img src="images/index/InteractiveWhiteboard.jpg" alt=""/>
+															<span class="overlay-info">
+																<span>
+																	<span>
+																		<span class="icon-plus"></span>
+																	</span>
+																</span>
+															</span>
+														</a>
+													</div>
+													<div class="item-description with-background">
+														<h4 class="title-color">الفصول الدراسية الذكية</h4>
+													</div>
+												</div>
+											</div>
+											<div class="slide-item">
+												<div class="grid-item mobile-app home-page-layout">
+													<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="transparent" data-hover-bkg-opacity="1">
+														<a class="overlay-link" href="404.html">
+															<img src="images/index/Def_Services.jpg" alt=""/>
+															<span class="overlay-info">
+																<span>
+																	<span>
+																		<span class="icon-plus"></span>
+																	</span>
+																</span>
+															</span>
+														</a>
+													</div>
+													<div class="item-description with-background">
+														<h4 class="title-color">الاستوديوهات التعليمية</h4>
+													</div>
+												</div>
+											</div>
+												
+											</div>
 										</div>
 									</div>
-									<div class="grid-item mobile-app home-page-layout">
-										<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="transparent" data-hover-bkg-opacity="1">
-											<a class="overlay-link" href="404.html">
-												<img src="images/index/STEM.jpg" alt=""/>
-												<span class="overlay-info">
-													<span>
-														<span>
-															<span class="icon-plus"></span>
-														</span>
-													</span>
-												</span>
-											</a>
-										</div>
-										<div class="item-description with-background">
-											<h4 class="title-color">ستيم</h4>
-										</div>
-									</div>
-									<div class="grid-item mobile-app home-page-layout">
-										<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="transparent" data-hover-bkg-opacity="1">
-											<a class="overlay-link" href="404.html">
-												<img src="images/index/InteractiveWhiteboard.jpg" alt=""/>
-												<span class="overlay-info">
-													<span>
-														<span>
-															<span class="icon-plus"></span>
-														</span>
-													</span>
-												</span>
-											</a>
-										</div>
-										<div class="item-description with-background">
-											<h4 class="title-color">الفصول الدراسية الذكية</h4>
-										</div>
-									</div>
-									
 								</div>
 							</div>
 						</div>
@@ -363,9 +400,14 @@
 						<div class="column width-6">
 							<div class="box shadow small bkg-white">
 								<div class="feature-column small mb-50 right">
-									<span class="feature-icon icon-map color-charcoal"></span>
+									
 									<div class="feature-text text-medium">
-										<a href=""><span class="color-hover-black text-large">البرامج الإثرائية لتعليم اللغة الإنجليزية إلكترونياً</span></a>
+										<a href="">
+											<span class="color-hover-black">
+												<i class="fa-solid fa-hand-holding-dollar fa-2x pl-3"></i>
+												<span class="text-large">البرامج الإثرائية لتعليم اللغة الإنجليزية إلكترونياً</span>
+											</span>
+										</a>
 										<p>تعمل تجسير الفكر على تطوير المهارات وإثراء الطلاب باللغة الإنجليزية إلكترونياً وذلك من خلال برامج احترافيه هي الأولى بالعالم تُنفذ من خلال منصات إلكترونية متوافقة مع التعليم العصري</p>
 									</div>
 								</div>
@@ -374,9 +416,13 @@
 						<div class="column width-6">
 							<div class="box shadow small bkg-white">
 								<div class="feature-column small right">
-									<span class="feature-icon icon-add-to-list color-charcoal"></span>
 									<div class="feature-text text-medium">
-										<a href=""><span class="color-hover-black text-large">تطوير المقررات الإلكترونية</span></a>
+										<a href="">
+											<span class="color-hover-black">
+												<i class="fa-solid fa-arrow-up-wide-short fa-2x pl-3"></i>
+												<span class="text-large">تطوير المقررات الإلكترونية</span>
+											</span>
+										</a>
 										<p>أهم ما يميز تجسير الفكر في تطوير المقررات هو انه يتم استخدام احدث المعايير وامهر الكفاءات حيث أن لها خبرة طويلة في هذا المجال من خلال تنفيذ عدة مشاريع كانت نتائجها احترافية</p>
 									</div>
 								</div>
@@ -385,10 +431,13 @@
 						<div class="column width-6">
 							<div class="box shadow small bkg-white">
 								<div class="feature-column small mb-50 right">
-									<span class="feature-icon icon-power-plug color-charcoal"></span>
 									<div class="feature-text text-medium">
 										<a href="">
-											<span class="color-hover-black text-large">الواقع الأفتراضي في التعليم</span></a>
+											<span class="color-hover-black">
+												<i class="fa-solid fa-mobile-screen-button fa-2x pl-3"></i>
+												<span class="text-large">الواقع الأفتراضي في التعليم</span>
+											</span>
+										</a>
 										<p>تقوم تجسير الفكر بتصميم وتطوير مختبرات افتراضية للرياضيات، الفيزياء والكيمياء بحيث يكون لدى الطالب تصور كامل وفهم افضل لجميع المواضيع التي تطرح في هذه المواد العلمية</p>
 									</div>
 								</div>
@@ -397,9 +446,13 @@
 						<div class="column width-6">
 							<div class="box shadow small bkg-white">
 								<div class="feature-column small right">
-									<span class="feature-icon icon-grid color-charcoal"></span>
 									<div class="feature-text text-medium">
-										<a href=""><span class="color-hover-black text-large">انظمة التعليم</span></a>
+										<a href="">
+											<span class="color-hover-black">
+												<i class="fa-solid fa-database fa-2x pl-3"></i>
+												<span class="text-large">انظمة التعليم</span>
+											</span>
+										</a>
 										<p>تقوم تجسير الفكر بتطوير انظمة تعليمية كاملة لرفع المحتوى الالكتروني عليها وذلك من خلال العمل على انظمة خاصة للعميل او انظمة مبنية على ما توفره الانظمة العالمية مثل مودل ويتم تعديله</p>
 									</div>
 								</div>
@@ -428,24 +481,24 @@
 								<div class=""  style="display: flex;align-items: flex-start;justify-content: space-between;flex-direction: row;">
 
 									<ul class="social-list list-vertical right">
-										<li><a href="#"><span class="icon-location-pin"></span>&nbsp;<span>مكتب الرياض</span></a></li>
-										<li><a href="#"><span class="icon-mail"></span>&nbsp;<span>Info@ajseerksa.com</span></a></li>
-										<li><a href="#"><span class="icon-phone"></span>&nbsp;<span>966114621717</span></a></li>
+										<li><a href="#"><i class="fa-solid fa-location-dot"></i>&nbsp;<span>مكتب الرياض</span></a></li>
+										<li><a href="#"><i class="fa-solid fa-envelope"></i>&nbsp;<span>Info@ajseerksa.com</span></a></li>
+										<li><a href="#"><i class="fa-solid fa-phone-flip"></i>&nbsp;<span>966114621717</span></a></li>
 										
 									</ul>
 									<ul class="social-list list-vertical right">
-										<li><a href="#"><span class="icon-location-pin"></span>&nbsp;<span>مكتب جدة</span></a></li>
-										<li><a href="#"><span class="icon-mail"></span>&nbsp;<span>Info@tajseerksa.com</span></a></li>
-										<li><a href="#"><span class="icon-phone"></span>&nbsp;<span>966545992326</span></a></li>
+										<li><a href="#"><i class="fa-solid fa-location-dot"></i>&nbsp;<span>مكتب جدة</span></a></li>
+										<li><a href="#"><i class="fa-solid fa-envelope"></i>&nbsp;<span>Info@tajseerksa.com</span></a></li>
+										<li><a href="#"><i class="fa-solid fa-phone-flip"></i>&nbsp;<span>966545992326</span></a></li>
 										
 									</ul>
 								</div>
 								
 								<ul class="social-list list-horizontal center">
-									<li><a href="#"><span class="icon-facebook-with-circle medium"></span></a></li>
-									<li><a href="#"><span class="icon-instagram-with-circle medium"></span></a></li>
-									<li><a href="#"><span class="icon-twitter-with-circle medium"></span></a></li>
-									<li><a href="#"><span class="icon-linkedin-with-circle medium"></span></a></li>
+									<li><a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+									<li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+									<li><a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a></li>
+									<li><a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -455,8 +508,8 @@
 					<div class="row">
 						<div class="column width-12">
 							<div class="footer-bottom-inner">
-								<p class="copyright center">&copy; 2022 تجسير، جميع الحقوق محفوظة.</p>
-								<a style="position: fixed;left: 40px;bottom: 30px;" href="#" class="scroll-to-top button bkg-top-theme bkg-top-hover-theme color-white color-hover-grey-light scroll-linkno-page-fade rounded small"><span class="icon-arrow-bold-up"></span></a>
+								<p class="copyright center"><i class="fa-solid fa-copyright"></i> 2022 تجسير، جميع الحقوق محفوظة.</p>
+								<a style="position: fixed;left: 30px;bottom: 20px;" href="#" class="scroll-to-top button bkg-charcoal-light bkg-top-hover-theme  scroll-linkno-page-fade rounded small"><i class="fa-solid fa-chevron-up title-color text-large"></i></a>
 							</div>
 						</div>
 					</div>
@@ -470,8 +523,37 @@
 	<!-- Js -->
 	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="http://maps.googleapis.com/maps/api/js?v=3"></script>
 	<script src="js/timber.master.min.js"></script>
+	<script src="fontawesome-free-6.0.0-web/js/all.min.js"></script>
+	<script>
+		$(document).ready(function () {
+    // main elements
+	$(".group-slide").owlCarousel({
+      loop: false,
+      margin: 30,
+      responsiveClass: true,
+      items: 1,
+      nav: false,
+      navText: [
+        '<span class="icon-angle-left"></span>',
+        '<span class="icon-angle-right"></span>',
+      ],
+      responsive: {
+        767: {
+          items: 2,
+          nav: false,
+        },
+        991: {
+          items: 3,
+          nav: true,
+          loop: false,
+        },
+      },
+    });
+    });
+	</script>
 </body>
 </html>
