@@ -588,7 +588,7 @@ body,
 	border-top: none;
 }
 .mobile .header .header-inner{
-	border-bottom: 1px solid #eee;
+	/* border-bottom: 1px solid #eee; */
 }
 .mobile .header + .content{
 	padding-top: 0;
