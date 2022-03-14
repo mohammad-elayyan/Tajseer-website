@@ -26,20 +26,249 @@
 	<link rel="stylesheet" href="css/skin.css" />
 	<link rel="stylesheet" href="css/slider/main.css">
 	<link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
+	<link rel="stylesheet" href="pages/light/style02.css">
 
 	<!--[if lt IE 9]>
     	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+<style>
+	/* .projects .cont{
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+}
+.projects #cont{
+	position: relative;
+	margin: 0 auto;
+}
 
+.hr{
+    padding: 0;
+    margin: 0;
+    width: 220px;
+    height: 2px;
+    background: #3DC4D5;
+    display: inline-block;
+  }
+.projects a, .projects a * {
+	-webkit-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+	text-decoration: none;
+}
+.projects a:hover{
+	text-decoration: none;
+}
+.projects #content {
+	width: 100%;
+	position: relative;
+	z-index: 55;
+	height: auto;
+	font-family: 'Cairo', sans-serif;
+}
+.projects{
+	font-family: 'Cairo', sans-serif;
+	margin: 50px 0;
+}
+.projects .header, .contact .header{
+	color: #3DC4D5;
+	margin: 0 0;
+}
+.projects section {
+	padding: 0 0;
+	margin: 0 0;
+}
+.projects .element {
+	margin-bottom: 30px;
+}
+.projects .element img{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 8px 2px #296A84;
+}
+body.centered-tiles .element {
+	text-align: center;
+}
+.projects .white-text {
+	-webkit-text-shadow: 0px 0 30px rgba(0, 0, 0, 0.2);
+	text-shadow: 0px 0 30px rgba(0, 0, 0, 0.2);
+	position: relative;
+}
+.extra-padding-top {
+	padding-top: 10px;
+}
+.extra-padding-right {
+	padding-right: 45px;
+}
+.extra-padding-bottom {
+	padding-bottom: 45px
+}
+.small-padding-bottom {
+	padding-bottom: 25px
+}
+.projects .overlay {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.0);
+	width: 100%;
+	height: 100%;
+}
+.projects .transition-link .overlay {
+	-webkit-transition: all 600ms ease-in-out 0s;
+	transition: all 600ms ease-in-out 0s;
+}
+.projects a:hover .overlay, .intro .overlay, .image-with-overlay .overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.projects .title-holder {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 4;
+}
+.projects .title-holder h3::before {
+	background: #fff;
+	bottom: 0;
+	content: "";
+	display: block;
+	left: auto;
+	margin: auto;
+	position: absolute;
+	right: 100%;
+	top: 0;
+	width: 100%;
+	-webkit-transition: right 600ms ease-in-out 0s;
+	transition: right 600ms ease-in-out 0s;
+}
+.projects .title-holder h3 {
+	color: transparent;
+	display: inline-block;
+	left: 25px;
+	max-width: calc(100% - 80px);
+	overflow: hidden;
+	position: absolute;
+	text-overflow: ellipsis;
+	top: 54px;
+	white-space: nowrap;
+	z-index: 2;
+	-webkit-transition: color 150ms ease-in-out 200ms;
+	transition: color 150ms ease-in-out 200ms;
+	text-align: center;
+	padding: 0 10px;
+}
+.projects .title-holder.right h3 {
+	left: auto;
+	right: 25px;
+}
+.projects .title-holder.bottom h3 {
+	bottom: 22px;
+	top: auto;
+}
+.projects .title-holder p::before {
+	background: #fff;
+	bottom: 0;
+	content: "";
+	display: block;
+	right: auto;
+	margin: auto;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	width: 100%;
+	-webkit-transition: left 600ms ease-in-out 0s;
+	transition: left 600ms ease-in-out 0s;
+}
+.projects .title-holder p {
+	color: transparent;
+	display: inline-block;
+	left: 25px;
+	max-width: calc(100% - 80px);
+	overflow: hidden;
+	position: absolute;
+	text-overflow: ellipsis;
+	top: 30px;
+	white-space: nowrap;
+	z-index: 2;
+	-webkit-transition: color 150ms ease-in-out 200ms;
+	transition: color 150ms ease-in-out 200ms;
+	text-align: center;
+	padding: 0 10px;
+	opacity: 1 !important;
+}
+.projects .title-holder.right p {
+	left: auto;
+	right: 25px;
+}
+.projects .title-holder.bottom p {
+	top: auto;
+	bottom: 54px;
+}
+
+.projects a.transition-link {
+	display: block;
+	z-index: 1;
+	position: relative;
+	padding: 4px;
+	-webkit-transition: color 300ms ease-in-out 0s;
+	transition: color 300ms ease-in-out 0s;
+	
+	
+}
+.projects a.transition-link:hover .title-holder h3 {
+	color: white;
+}
+.projects a.transition-link:hover .title-holder h3::before {
+	right: -100%;
+}
+.projects a.transition-link:hover .title-holder p {
+	color: white;
+}
+.projects a.transition-link:hover .title-holder p::before {
+	left: -100%;
+}
+.projects .element a.transition-link:hover .element::before {
+	transform: scaleX(2);
+}
+.projects a.transition-link img {
+	height: auto;
+	width: 100%;
+	max-width: none;
+	-webkit-backface-visibility: hidden;
+}
+.projects .view-all, .contact .send{
+	border: .5px solid #296A84;
+	background-color: transparent;
+	padding: 5px 15px;
+	color: #3DC4D5;
+	box-shadow: 0 0 5px .2px;
+	border-radius: 3px;
+	font-size: 18px;
+}
+.projects .view-all:hover, .contact .send:hover{
+	background-color: #3DC4D5;;
+	color: #fff;
+}
+.contact .send{
+	border: none;
+	padding: 6px 25px;
+	margin-bottom: 20px;
+} */
+</style>
 </head>
-<body class="shop home-page">
+<body class="shop home-page" dir="rtl">
 
 	<!-- Side Navigation Menu -->
 	<aside class="side-navigation-wrapper enter-right" data-no-scrollbar data-animation="push-in">
 		<div class="side-navigation-scroll-pane">
 			<div class="side-navigation-inner">
 				<div class="side-navigation-header">
-					<div class="navigation-hide side-nav-hide" style="left: 1% !important;">
+					<div class="navigation-hide side-nav-hide">
 						<a href="#">
 							<i class="fa-solid fa-xmark fa-2x"></i>
 						</a>
@@ -49,23 +278,6 @@
 					<ul>
 						<li>
 							<a href="404.html" class="contains-sub-menu bkg-hover-theme">الرئيسية</a>
-						</li>
-						<li>
-							<a href="404.html" class="contains-sub-menu bkg-hover-theme">التعلم الإلكتروني</a>
-							<ul class="sub-menu">
-								<li>
-									<a href="404.html" class="bkg-hover-theme">تطوير المقررات الإلكترونية</a>
-								</li>
-								<li>
-									<a href="404.html" class="bkg-hover-theme">البرامج الإثرائية لتعليم اللغة الإنجليزية إلكترونياً</a>
-								</li>
-								<li>
-									<a href="404.html" class="bkg-hover-theme">الواقع الأفتراضي في التعليم</a>
-								</li>
-								<li>
-									<a href="404.html" class="bkg-hover-theme">انظمة التعليم</a>
-								</li>
-							</ul>
 						</li>
 						<li>
 							<a href="404.html" class="contains-sub-menu bkg-hover-theme">الحلول التعليمية</a>
@@ -81,6 +293,23 @@
 								</li>
 								<li>
 									<a href="404.html">الأستوديوهات التعليمية</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="pages/light/servicesLight.html" class="contains-sub-menu bkg-hover-theme">ماذا نقدم</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="404.html" class="bkg-hover-theme">تطوير المقررات الإلكترونية</a>
+								</li>
+								<li>
+									<a href="404.html" class="bkg-hover-theme">البرامج الإثرائية لتعليم اللغة الإنجليزية إلكترونياً</a>
+								</li>
+								<li>
+									<a href="404.html" class="bkg-hover-theme">الواقع الأفتراضي في التعليم</a>
+								</li>
+								<li>
+									<a href="404.html" class="bkg-hover-theme">انظمة التعليم</a>
 								</li>
 							</ul>
 						</li>
@@ -117,7 +346,7 @@
 						<div class="column width-12 nav-bar-inner">
 							<div class="logo">
 								<div class="logo-inner">
-									<a href="index.html"><img src="images/index/logo-dark.png" alt="Tajseer Logo" /></a>
+									<a href="index.html"><img src="images/index/logo.png" alt="Tajseer Logo" /></a>
 									<a href="index.html"><img src="images/index/logo.png" alt="Tajseer Logo" /></a>
 								</div>
 							</div>
@@ -157,7 +386,7 @@
 										<a href="portfolio-three-columns.html">تحسين التصنيف العالمي للجامعات</a>
 									</li> -->
 									<li>
-										<a href="404.html">التعلم الإلكتروني</a>
+										<a href="pages/light/servicesLight.html">ماذا نقدم</a>
 										<ul class="sub-menu">
 											<li>
 												<a href="404.html">تطوير المقررات الإلكترونية</a>
@@ -196,93 +425,73 @@
 			<!-- Content -->
 			<div class="content clearfix">
 
-				<!-- Fullscreen Slider Section -->
-				<section class="section-block featured-media tm-slider-parallax-container">
+				<section class="section-block featured-media">
 					<div class="tm-slider-container full-width-slider" data-featured-slider data-parallax data-scale-under="960">
 						<ul class="tms-slides">
-							<li class="tms-slide" data-image data-as-bkg-image data-force-fit data-overlay-bkg-color="#000000" data-overlay-bkg-opacity="0.70">
-								<div class="tms-content">
-									<div class="tms-content-inner center v-align-middle">
-										<div class="row">
-											<div class="column width-12">
-												<div class="tms-caption "
-												data-animate-in="preset:slideInUpShort;duration:900ms;delay:100ms;"
-												data-no-scale >
-													<img style="width: 50%;" src="images/index/logo.png">
-												</div>
-												
-												
-													<!-- <h1 class="tms-caption color-white title-xlarge mb-0"
-													data-animate-in="preset:slideInUpShort;duration:900ms;delay:100ms;"
-													data-no-scale
-													>تجسير</h1> -->
-												<div class="clear"></div>
-												<h2 class="tms-caption mb-20 color-grey-ultralight"
-													data-animate-in="preset:slideInUpShort;duration:900ms;delay:200ms;"
-													data-no-scale
-													>حلول التعلم</h2>
-												<div class="clear"></div>
-												<div class="tms-caption"
-													data-animate-in="preset:slideInUpShort;duration:900ms;delay:400ms;"
-													data-no-scale
-												>
-													<a href="#block-design" data-offset="-60" class="button medium border-grey-light bkg-hover-theme color-white color-hover-white text-uppercase scroll-link">اعرف المزيد</a>
-												</div>
-												<!-- <div class="tms-caption"
-													data-animate-in="preset:slideInUpShort;duration:900ms;delay:400ms;"
-													data-no-scale
-												>
-													<a href="#one-page-demos" data-offset="-60" class="button medium border-grey-light bkg-hover-theme color-white color-hover-white text-uppercase scroll-link">One page Concepts</a>
-												</div> -->
-											</div>
-										</div>
-									</div>
-								</div>
-								<img src="./images/index/banner/bg2.png" alt=""/>
-								<!-- <video src="../HTML/videos/Tajseer.mp4" autoplay controls></video> -->
+							<li class="tms-slide">
+								
+								<video src="videos/Tajseer.mp4" style="width: 100%;" autoplay="true" loop></video>
+								
 							</li>
 						</ul>
 					</div>
 				</section>
-				<!-- Fullscreen Slider Section End -->
+				
+				<!-- <div class="projects extra-padding-bottom">
 
-				<!-- Feature Section 2 -->
-				<section id="block-design" class="section-block feature-2">
-					<div class="row flex">
-						<div class="column width-5 pull-8">
-							<div class="feature-image mb-mobile-50">
-								<div class="feature-image-inner center-on-mobile horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
-									<!-- <video poster="images/index/banner/thum.png" style="width: 100%;" src="../HTML/videos/Tajseer.mp4"></video> -->
-									<a title="Play Video" href="https://youtu.be/8XEJhQ5BRO8" data-fancybox>
-										<video poster="images/index/banner/thum.png" style="width: 100%;"></video>
-									</a>
-									
-								</div>
-							</div>
+					<section>
+					  <div class="cont clearfix">
+						<div class="col-lg-12 centered small-padding-bottom">
+						  <h2 class="header">Recent Work</h2>
+						  <span class="hr"></span>
 						</div>
-						<div class="column width-5 push-6 push-1 right">
-							<div class="feature-content">
-								<div class="feature-content-inner horizon center-on-mobile" data-animate-in="preset:slideInUpShort;duration:900ms;delay:300ms;" data-threshold="0.6">
-									<h2 class="mb-30 title-color">التعلم الإلكتروني</h2>
-									<p class="lead">تجسير الفكر متخصصة في مجال تكنولوجيا المعلومات و حلول الاستشارات تعمل على تلبية احتياجات حلول التعليم الإلكتروني ابتداء في المملكة العربية السعودية والأردن منذ  عام (2010) ويرتكز معظم اهتمامها على تلبية الاحتياجات المتزايدة للمؤسسات التعليمية، والشركات في مجال التعليم الإلكتروني، حيث تقوم الشركة بالتخطيط والتنفيذ والتطوير والبرمجة، وتقديم الدعم الفني لمشاريع تكنولوجيا التعلم الإلكتروني، وبذلك فإنها تدعم المؤسسات التعليمية والشركات من خلال أنظمتها الذكية ذات النطاق الواسع من المهام المختلفة، والتي تشمل تطوير استراتيجيات العمل والتخطيط الكامل لتنفيذ مشاريع تعلم إلكتروني، وأفضل الطرق في اختيار الحلول المناسبة لإدارة التعليم الإلكتروني واختيار أفضل الأدوات في بناء المحتوى الإلكتروني المناسب.</p>
-									<p></p>
-								</div>
+					  </div>
+					</section>
+				  
+					<section">
+						<div class="cont">
+						  <div class="element clearfix col-sm-6 border"> <a href="" data-title="Image Title" class="transition-link"> <img src="images/1600.png" alt="" />
+							<div class="title-holder">
+							  <h3>Just do it!</h3>
+							  <p class="large">Nike</p>
 							</div>
+							<div class="overlay"></div>
+							</a> </div>
+						  <div class="element clearfix col-sm-6 home travel"> <a href="" data-title="Image Title" class="transition-link"> <img src="images/1440.png" alt="" />
+							<div class="title-holder right">
+							  <h3>Wireless AirPods</h3>
+							  <p class="large">Apple</p>
+							</div>
+							<div class="overlay"></div>
+							</a> </div>
+						  <div class="element clearfix col-sm-6 home travel"> <a href="" data-title="Image Title" class="transition-link"> <img src="images/1600.png" alt="" />
+							<div class="title-holder">
+							  <h3>Magazine Cover</h3>
+							  <p class="large">Inventory</p>
+							</div>
+							<div class="overlay"></div>
+							</a> </div>
+						  <div class="element clearfix col-sm-6 home travel"> <a href="" data-title="Image Title" class="transition-link"> <img src="images/1440.png" alt="" />
+							<div class="title-holder right">
+							  <h3>Seller Admin</h3>
+							  <p class="large">Shopify</p>
+							</div>
+							<div class="overlay"></div>
+							</a> </div>
 						</div>
-					</div>
-				</section>
-				<!-- Feature Section 2 End -->
-
-				<!-- Feature Section 2 -->
-				<section class="section-block bkg-charcoal feature-2 right">
-					<div class="row flex">
-						
-					</div>
-				</section>
+						<div class="container">
+						  <div class="col-lg-12 white-text centered">
+							<p><a href="portfolio.html" title="" class="view-all">View All</a></p>
+						  </div>
+						</div>
+					  </section>
+				  </div> -->
 				<!-- Feature Section 2 End -->
 
 				<!-- Demo Grid -->
-				
+
+				<section class="ghICON_TEXT">
+
 					<div id="homepage-demos" class="section-block no-padding-bottom bkg-grey-ultralight center">
 						<div class="row">
 							<div class="column width-12 center">
@@ -303,7 +512,7 @@
 													<div class="grid-item mobile-app home-page-layout">
 														<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="transparent" data-hover-bkg-opacity="1">
 															<a class="overlay-link" href="404.html">
-																<img src="images/index/Robotics.jpg" alt=""/>
+																<img src="/pages/dark/image/book.png" alt=""/>
 																<span class="overlay-info">
 																	<span>
 																		<span>
@@ -322,7 +531,7 @@
 													<div class="grid-item mobile-app home-page-layout">
 														<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="transparent" data-hover-bkg-opacity="1">
 															<a class="overlay-link" href="404.html">
-																<img src="images/index/STEM.jpg" alt=""/>
+																<img src="pages/dark/image/mobile.png" alt=""/>
 																<span class="overlay-info">
 																	<span>
 																		<span>
@@ -341,7 +550,7 @@
 												<div class="grid-item mobile-app home-page-layout">
 													<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="transparent" data-hover-bkg-opacity="1">
 														<a class="overlay-link" href="404.html">
-															<img src="images/index/InteractiveWhiteboard.jpg" alt=""/>
+															<img src="pages/dark/image/ideas.png" alt=""/>
 															<span class="overlay-info">
 																<span>
 																	<span>
@@ -360,7 +569,7 @@
 												<div class="grid-item mobile-app home-page-layout">
 													<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="transparent" data-hover-bkg-opacity="1">
 														<a class="overlay-link" href="404.html">
-															<img src="images/index/Def_Services.jpg" alt=""/>
+															<img src="pages/dark/image/vr.png" alt=""/>
 															<span class="overlay-info">
 																<span>
 																	<span>
@@ -383,83 +592,145 @@
 							</div>
 						</div>
 					</div>
+				</section>
 				<!-- Demo Grid End -->
 
 
+				<section class="ghICON_TEXT">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="ot-heading text-center text-white">
+									<h1>خدماتنا</h1>
+									<h4>نقدم الحلول الرائدة <br>التي تواكب مستقبل التعليم في العالم</h4>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row justify-content-center">
+							<div class="col-lg-2 col-md-4 col-sm-6 col-12">
+								<a class="tech-box text-center" href="https://www.google.com/" >
+									<div class="icon-main">
+										<img src="pages/light/icon/training.svg" />
+	
+	
+									</div>
+									<h5>التدريب والاستشارات</h5>
+									
+								</a>
+							</div>
+							<div class="col-lg-2 col-md-4 col-sm-6 col-12">
+								<a class="tech-box text-center" href="https://www.google.com/">
+									<div class="icon-main">
+										<img src="pages/light/icon/book.svg" />
+	
+									</div>
+									<h5>تطوير المقررات الإلكترونية</h5>
+								</a>
+							</div>
+							<div class="col-lg-2 col-md-4 col-sm-6 col-12">
+								<a class="tech-box text-center" href="https://www.google.com/">
+									<div class="icon-main"> 
+									<img src="pages/light/icon/stem.svg" /></div>
+									<h5>ستيم STEM</h5>
+								</a>
+							</div>
+							<div class="col-lg-2 col-md-4 col-sm-6 col-12">
+								<a class="tech-box text-center" href="https://www.google.com/">
+									<div class="icon-main"> <img src="pages/light/icon/vr.svg" />
+									</div>
+									<h5>الواقع الافتراضي VR </h5>
+								</a>
+							</div>
+							<div class="col-lg-2 col-md-4 col-sm-6 col-12">
+								<a class="tech-box text-center" href="https://www.google.com/">
+									<div class="icon-main"> <img src="pages/light/icon/university.svg" />
+									</div>
+									<h5>البرامج التعليمية مع الجامعات العالمية</h5>
+								</a>
+							</div>
+							
+							
+						</div>
+					</div>
+				</section>
 				
 
 				<!-- Feature Column Section -->
-				<div id="discover" class="section-block replicable-content">
-					<div class="row">
-						<div class="column width-12 center">
-							<h2 class="mb-10 title-color">خدماتنا</h2>
-							<p class="lead mb-60"></p>
+				<section class="ghICON_TEXT">
+
+					<div id="discover" class="section-block replicable-content">
+						<div class="row">
+							<div class="column width-12 center">
+								<h2 class="mb-10 title-color">خدماتنا</h2>
+								<p class="lead mb-60"></p>
+							</div>
+						</div>
+						<div class="row flex">
+							<div class="column width-6">
+								<div class="box shadow small bkg-white">
+									<div class="feature-column small mb-50 right">
+										
+										<div class="feature-text text-medium">
+											<a href="">
+												<span class="color-hover-black">
+													<i class="fa-solid fa-hand-holding-dollar fa-2x pl-3"></i>
+													<span class="text-large">البرامج الإثرائية لتعليم اللغة الإنجليزية إلكترونياً</span>
+												</span>
+											</a>
+											<p>تعمل تجسير الفكر على تطوير المهارات وإثراء الطلاب باللغة الإنجليزية إلكترونياً وذلك من خلال برامج احترافيه هي الأولى بالعالم تُنفذ من خلال منصات إلكترونية متوافقة مع التعليم العصري</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="column width-6">
+								<div class="box shadow small bkg-white">
+									<div class="feature-column small right">
+										<div class="feature-text text-medium">
+											<a href="">
+												<span class="color-hover-black">
+													<i class="fa-solid fa-arrow-up-wide-short fa-2x pl-3"></i>
+													<span class="text-large">تطوير المقررات الإلكترونية</span>
+												</span>
+											</a>
+											<p>أهم ما يميز تجسير الفكر في تطوير المقررات هو انه يتم استخدام احدث المعايير وامهر الكفاءات حيث أن لها خبرة طويلة في هذا المجال من خلال تنفيذ عدة مشاريع كانت نتائجها احترافية</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="column width-6">
+								<div class="box shadow small bkg-white">
+									<div class="feature-column small mb-50 right">
+										<div class="feature-text text-medium">
+											<a href="">
+												<span class="color-hover-black">
+													<i class="fa-solid fa-mobile-screen-button fa-2x pl-3"></i>
+													<span class="text-large">الواقع الأفتراضي في التعليم</span>
+												</span>
+											</a>
+											<p>تقوم تجسير الفكر بتصميم وتطوير مختبرات افتراضية للرياضيات، الفيزياء والكيمياء بحيث يكون لدى الطالب تصور كامل وفهم افضل لجميع المواضيع التي تطرح في هذه المواد العلمية</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="column width-6">
+								<div class="box shadow small bkg-white">
+									<div class="feature-column small right">
+										<div class="feature-text text-medium">
+											<a href="">
+												<span class="color-hover-black">
+													<i class="fa-solid fa-database fa-2x pl-3"></i>
+													<span class="text-large">انظمة التعليم</span>
+												</span>
+											</a>
+											<p>تقوم تجسير الفكر بتطوير انظمة تعليمية كاملة لرفع المحتوى الالكتروني عليها وذلك من خلال العمل على انظمة خاصة للعميل او انظمة مبنية على ما توفره الانظمة العالمية مثل مودل ويتم تعديله</p>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="row flex">
-						<div class="column width-6">
-							<div class="box shadow small bkg-white">
-								<div class="feature-column small mb-50 right">
-									
-									<div class="feature-text text-medium">
-										<a href="">
-											<span class="color-hover-black">
-												<i class="fa-solid fa-hand-holding-dollar fa-2x pl-3"></i>
-												<span class="text-large">البرامج الإثرائية لتعليم اللغة الإنجليزية إلكترونياً</span>
-											</span>
-										</a>
-										<p>تعمل تجسير الفكر على تطوير المهارات وإثراء الطلاب باللغة الإنجليزية إلكترونياً وذلك من خلال برامج احترافيه هي الأولى بالعالم تُنفذ من خلال منصات إلكترونية متوافقة مع التعليم العصري</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="column width-6">
-							<div class="box shadow small bkg-white">
-								<div class="feature-column small right">
-									<div class="feature-text text-medium">
-										<a href="">
-											<span class="color-hover-black">
-												<i class="fa-solid fa-arrow-up-wide-short fa-2x pl-3"></i>
-												<span class="text-large">تطوير المقررات الإلكترونية</span>
-											</span>
-										</a>
-										<p>أهم ما يميز تجسير الفكر في تطوير المقررات هو انه يتم استخدام احدث المعايير وامهر الكفاءات حيث أن لها خبرة طويلة في هذا المجال من خلال تنفيذ عدة مشاريع كانت نتائجها احترافية</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="column width-6">
-							<div class="box shadow small bkg-white">
-								<div class="feature-column small mb-50 right">
-									<div class="feature-text text-medium">
-										<a href="">
-											<span class="color-hover-black">
-												<i class="fa-solid fa-mobile-screen-button fa-2x pl-3"></i>
-												<span class="text-large">الواقع الأفتراضي في التعليم</span>
-											</span>
-										</a>
-										<p>تقوم تجسير الفكر بتصميم وتطوير مختبرات افتراضية للرياضيات، الفيزياء والكيمياء بحيث يكون لدى الطالب تصور كامل وفهم افضل لجميع المواضيع التي تطرح في هذه المواد العلمية</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="column width-6">
-							<div class="box shadow small bkg-white">
-								<div class="feature-column small right">
-									<div class="feature-text text-medium">
-										<a href="">
-											<span class="color-hover-black">
-												<i class="fa-solid fa-database fa-2x pl-3"></i>
-												<span class="text-large">انظمة التعليم</span>
-											</span>
-										</a>
-										<p>تقوم تجسير الفكر بتطوير انظمة تعليمية كاملة لرفع المحتوى الالكتروني عليها وذلك من خلال العمل على انظمة خاصة للعميل او انظمة مبنية على ما توفره الانظمة العالمية مثل مودل ويتم تعديله</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				</section>
 				<!-- Feature Column Section End -->
 
 			</div>

@@ -1,0 +1,497 @@
+html {
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+/* Sections
+	 ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/* Grouping content
+	 ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+    color: #3DC4D5;
+    font-family: "cairo", sans-serif;
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 400;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "cairo", sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 20px;
+    color: #3DC4D5;
+    direction:rtl;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #296A84;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+body {
+  background: #fff;
+  /* Fallback for when there is no custom background color defined. */
+  overflow-x: hidden;
+}
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+  margin: 0 0 20px;
+  padding-left: 18px;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+.none-style {
+  list-style: none;
+  padding-left: 0;
+}
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+figure {
+  margin: 1em 0;
+  /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-width: 1px 0 0 1px;
+}
+
+  /* Firefox 18- */
+  color: #6d6d6d;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  color: #7141b1;
+  text-decoration: none;
+}
+a:visited {
+  color: #7141b1;
+}
+a:hover, a:focus, a:active {
+  color: #43baff;
+  text-decoration: none;
+}
+a:focus {
+  outline: 0;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+## Top Bar
+--------------------------------------------------------------*/
+
+
+
+
+
+
+.tech-box {
+  display: block;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 40px 15px 30px;
+}
+.tech-box .icon-main {
+  line-height: 1;
+  margin-bottom: 18px;
+}
+.tech-box i, .tech-box span:before {
+  font-size: 55px;
+  line-height: inherit;
+}
+    .tech-box h5 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.6;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        color: #3DC4D5;
+    }
+
+    
+        .tech-box:hover {
+  background: #43baff;
+  border-color: #43baff;
+  color: red;
+  
+}
+.tech-box:visited {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+.ghICON_TEXT {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: url('image/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+   
+
+/* End */
+
+/* Why choose us */
+
+/* service page */
+
+/* Project custom */
+.projects-masonry {
+    padding-top: 80px;
+    padding-bottom: 110px;
+}
+
+.portfolio-grid {
+    padding-top: 65px;
+    padding-bottom:110px;
+}
+.projects-col4 .project-item {
+    width: 25%;
+}
+@media only screen and (max-width: 993px){
+  .projects-col4 .project-item {
+      width: 50%;
+  }
+}
+.portfolio-single {
+    padding-top: 90px;
+    padding-bottom: 110px;
+}
+.project-detail span {
+    color: #6d6d6d;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 30px;
+    letter-spacing: 1px;
+    display: block;
+}
+.project-detail strong {
+    font-weight: 700;
+    line-height: 30px;
+    color: #1b1d21;
+}
+.single-project-img {
+    margin-bottom: 50px;
+}
+.text-decoration-line {
+    text-decoration-line: underline; 
+}
+.simple-slider {
+    margin-bottom: 40px;
+}
+.projects-meta {
+    margin-bottom: 90px;
+}
+.project-comtmnents {
+    margin-bottom: 80px;
+}
+.project-ralate {
+    margin-top: 70px;
+}
+.single-portfolio-navigation .post-prev, .single-portfolio-navigation .post-next {
+    min-width: 300px;
+}
+/* Footer */
+
+
+
+/* HTML */
+section {
+    padding-top: 120px;
+    padding-bottom: 130px;
+    position: relative;
+}
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+@media (min-width: 992px) {
+  .lg-hidden {
+    display: none;
+  }
+  /* Index 6 */
+  .testi-i6-img {
+    margin: 0 0 0 -250px;
+  }
+  .about-img-6 {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1200px;
+  }
+  /* Index 6 */
+  .testi-i6-img {
+      margin: 0 60px 0 -250px;
+  }
+  .sub-form6 {
+      margin-left: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .md-hidden {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .sm-hidden {
+    display: none;
+  }
+}
+
+

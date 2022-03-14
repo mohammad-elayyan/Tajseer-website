@@ -322,7 +322,7 @@ body,
 	background-color: #fff;
 }
 .section-block.featured-media{
-	background-color: #000;
+	background-color: #012B44;
 }
 
 /* greyscale */
@@ -549,7 +549,7 @@ body,
 
 /* Header Initial Styling */
 .header .header-inner{
-	background-color: #fff;
+	background-color: ##012B44;
 	border-bottom: none;
 	border-bottom: 1px solid #eee;
 }
@@ -559,16 +559,16 @@ body,
 
 /* Transparent Header Initial & Active Nav Colors */
 .header-transparent .header-inner{
-	background-color: transparent;
+	background-color: #012B44;
 	border-bottom: 1px solid transparent;
 }
 .header-transparent .header-inner > .nav-bar{
-	border-bottom: 1px solid rgba(255,255,255, 0.2);
+	/* border-bottom: 1px solid rgba(255,255,255, 0.2); */
 }
 
 /* Background Header - On Scroll! */
 .header-background .header-inner{
-	background-color: #fff;
+	background-color: #012B44;
 	border-color: #eee;
 }
 .header-background .header-inner > .nav-bar{
@@ -584,7 +584,7 @@ body,
 
 /* Mobile Header Styles & Breakpoints */
 .mobile .header .header-inner{
-	background-color: #fff;
+	background-color: #012B44;
 	border-top: none;
 }
 .mobile .header .header-inner{
@@ -597,11 +597,9 @@ body,
 	.header .header,
 	.header .header-inner,
 	.header.header-transparent .header-inner{
-		background-color: #fff;
+		background-color: ##012B44;
 	}
-	.header .header-inner{
-		border-bottom: 1px solid #eee;
-	}
+	
 	.header .header-inner > .nav-bar{
 		padding: 0;
 	}
