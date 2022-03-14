@@ -259,6 +259,15 @@ body.centered-tiles .element {
 	padding: 6px 25px;
 	margin-bottom: 20px;
 } */
+
+@media only screen and (max-width:994px){
+	.featured-media{
+		height: 100% !important;
+	}
+	.tm-slider-container{
+		padding-top: 0 !important;
+	}
+}
 </style>
 </head>
 <body class="shop home-page" dir="rtl">
@@ -426,12 +435,10 @@ body.centered-tiles .element {
 			<div class="content clearfix">
 
 				<section class="section-block featured-media">
-					<div class="tm-slider-container full-width-slider" data-featured-slider data-parallax data-scale-under="960">
+					<div class="tm-slider-container full-width-slider" style="padding-top: 5%;">
 						<ul class="tms-slides">
 							<li class="tms-slide">
-								
-								<video src="videos/Tajseer.mp4" style="width: 100%;" autoplay="true" loop></video>
-								
+								<video src="videos/Tajseer.mp4" style="width: 100%;" autoplay="true" loop controls></video>
 							</li>
 						</ul>
 					</div>

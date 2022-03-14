@@ -569,7 +569,7 @@ body,
 /* Background Header - On Scroll! */
 .header-background .header-inner{
 	background-color: #012B44;
-	border-color: #eee;
+	/* border-color: #eee; */
 }
 .header-background .header-inner > .nav-bar{
 	border-bottom: none;
