@@ -560,7 +560,7 @@ body,
 /* Transparent Header Initial & Active Nav Colors */
 .header-transparent .header-inner{
 	background-color: #012B44;
-	border-bottom: 1px solid transparent;
+	/* border-bottom: 1px solid transparent; */
 }
 .header-transparent .header-inner > .nav-bar{
 	/* border-bottom: 1px solid rgba(255,255,255, 0.2); */
