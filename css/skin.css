@@ -549,9 +549,9 @@ body,
 
 /* Header Initial Styling */
 .header .header-inner{
-	background-color: ##012B44;
+	background-color: #012B44;
 	border-bottom: none;
-	border-bottom: 1px solid #eee;
+	/* border-bottom: 1px solid #eee; */
 }
 .header .header-inner > .nav-bar{
 	/*border-bottom: 1px solid #eee;*/
