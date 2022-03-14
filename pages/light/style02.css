@@ -351,12 +351,14 @@ a:hover, a:active {
         color: #3DC4D5;
     }
 
+    .tech-box:hover h5{
+      color: #fff;
+    }
     
         .tech-box:hover {
   background: #43baff;
   border-color: #43baff;
   color: red;
-  
 }
 .tech-box:visited {
   color: #fff;
